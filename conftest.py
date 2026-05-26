@@ -1,6 +1,6 @@
 import pytest
 from selenium import webdriver
-from utils.login_page import login
+#from utils.login_page import login
 
 @pytest.fixture
 def driver():
@@ -11,7 +11,7 @@ def driver():
     yield driver
     driver.quit()
 
-@pytest.fixture
-def login_in_driver(driver):
-    login(driver)
-    return driver
+#@pytest.fixture
+#def login_in_driver(driver):
+#    login(driver)
+#    return driver

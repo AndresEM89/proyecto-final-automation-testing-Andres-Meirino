@@ -1,12 +1,16 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
+#from selenium import webdriver
+#from selenium.webdriver.common.by import By
+#from selenium.webdriver.common.keys import Keys
 
-def test_login_valid(login_in_driver):
-    try:
-        driver=login_in_driver
+from pages.login_page import LoginPage
 
-        assert "/inventory.html" in driver.current_url, "No se redirigio al inventario"
-        
-    except Exception as e:
-        print(f"error en test_login: {e}")
+def test_login_valid(driver):
+    login_page=LoginPage(driver)
+    login_page.login("standard_user", "secret_sauce")
+    assert "/inventory.html" in driver.current_url, "no se redirigio al inventario"
+
+def test_login_invalid_password(driver):
+    login_page=LoginPage(driver)
+    login_page.login("standard_user", "23456")
+    error=login_page.get_error_password_mensage()
+    assert "Mensaje de ERROR 371"
