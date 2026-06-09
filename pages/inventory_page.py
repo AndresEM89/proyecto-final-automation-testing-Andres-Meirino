@@ -36,3 +36,13 @@ class InventoryPage:
 
     def ir_al_carrito(self):
         self.driver.find_element(*self.link_carrito).click()
+
+    def agregar_producto_por_nombre(self, nombre_producto_json):
+        productos = self.driver.find_elements(*self.inventory_items)
+
+        for producto in productos:
+            nombre = producto.find_element(*self.nombres_productos).text
+
+            if nombre == nombre_producto_json:
+                producto.find_element(*self.add_to_cart_buttons).click()
+                break
