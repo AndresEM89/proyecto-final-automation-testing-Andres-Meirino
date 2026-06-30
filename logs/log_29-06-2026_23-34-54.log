@@ -1,0 +1,6 @@
+2026-06-29 23:35:04,176 INFO talento tech - CSV Login: Probando credenciales de usuario: 'standard_user' (Válido: true)
+2026-06-29 23:35:05,553 INFO talento tech - CSV Login: Validando redirección exitosa a la página de inventario
+2026-06-29 23:35:18,541 INFO talento tech - CSV Login: Probando credenciales de usuario: 'usuario_incorrecto' (Válido: false)
+2026-06-29 23:35:20,066 INFO talento tech - CSV Login: Validando presencia de mensaje de error 'Epic sadface'
+2026-06-29 23:35:33,396 INFO talento tech - CSV Login: Probando credenciales de usuario: 'standard_user' (Válido: false)
+2026-06-29 23:35:36,087 INFO talento tech - CSV Login: Validando presencia de mensaje de error 'Epic sadface'

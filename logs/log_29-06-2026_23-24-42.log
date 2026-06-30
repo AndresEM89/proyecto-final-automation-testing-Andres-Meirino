@@ -1,0 +1,10 @@
+2026-06-29 23:24:42,924 INFO talento tech - API: Intentando login válido en ReqRes
+2026-06-29 23:24:43,860 INFO talento tech - API: Respuesta recibida con status 200
+2026-06-29 23:24:43,873 INFO talento tech - API: Intentando login sin contraseña (flujo negativo)
+2026-06-29 23:24:44,840 INFO talento tech - API: Respuesta recibida con status 400
+2026-06-29 23:24:44,850 INFO talento tech - API: Intentando crear usuario: jose
+2026-06-29 23:24:45,813 INFO talento tech - API: Validando creación de usuario con status 201
+2026-06-29 23:24:45,829 INFO talento tech - API: Intentando eliminar usuario con ID 2
+2026-06-29 23:24:46,750 INFO talento tech - API: Validando eliminación con status 204
+2026-06-29 23:24:46,760 INFO talento tech - API: Solicitando lista de usuarios
+2026-06-29 23:24:47,448 INFO talento tech - API: Validando tiempos de respuesta de la petición GET

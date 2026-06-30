@@ -1,0 +1,6 @@
+2026-06-29 23:32:38,967 INFO talento tech - JSON: Leyendo lista de productos desde el archivo de datos
+2026-06-29 23:32:38,968 INFO talento tech - JSON: Agregando producto 'Sauce Labs Backpack' al carrito
+2026-06-29 23:32:39,146 INFO talento tech - JSON: Agregando producto 'Sauce Labs Bike Light' al carrito
+2026-06-29 23:32:39,310 INFO talento tech - JSON: Navegando hacia la página del carrito
+2026-06-29 23:32:39,449 INFO talento tech - JSON: Validando coincidencia de productos esperados vs carrito
+2026-06-29 23:32:39,450 INFO talento tech - JSON: Todos los productos del JSON se validaron correctamente en el carro

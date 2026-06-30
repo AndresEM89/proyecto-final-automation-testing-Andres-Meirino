@@ -1,0 +1,4 @@
+2026-06-29 23:33:41,636 INFO talento tech - Inventario: Validando el título principal del header
+2026-06-29 23:33:56,659 INFO talento tech - Inventario: Verificando la presencia de productos cargados en la UI
+2026-06-29 23:34:14,982 INFO talento tech - Inventario: Validando visibilidad de elementos base (Menú y Filtro)
+2026-06-29 23:34:15,018 INFO talento tech - Inventario: Elementos de la interfaz verificados con éxito
