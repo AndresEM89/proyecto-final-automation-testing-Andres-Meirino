@@ -20,7 +20,7 @@ def test_login_sin_password():
     body = {
        "email": "eve.holt@reqres.in", 
     }
-    logger.info("API: Intentando login sin contraseña (flujo negativo)")
+    logger.warning("API: Intentando login sin contraseña (flujo negativo)")
     response = requests.post("https://reqres.in/api/login", headers=headers, json=body)
     
     logger.info(f"API: Respuesta recibida con status {response.status_code}")
@@ -51,6 +51,16 @@ def test_get_user():
     logger.info("API: Solicitando lista de usuarios")
     response = requests.get("https://reqres.in/api/users", headers=headers)
 
-    logger.info(f"API: Validando tiempos de respuesta de la petición GET")
-    assert response.status_code == 200
-    assert response.elapsed.total_seconds() < 2, f"Tiempo de respuesta elevado: {response.elapsed.total_seconds()}"
+    tiempo_respuesta = response.elapsed.total_seconds()
+    
+    try:
+        assert response.status_code == 200
+        assert tiempo_respuesta < 2
+        logger.info(f"API: Petición GET exitosa en {tiempo_respuesta} segundos")
+    except AssertionError as e:
+        if tiempo_respuesta >= 2:
+            # CAMBIO AQUÍ: Si el servidor tarda demasiado, es una alerta CRÍTICA
+            logger.critical(f"PERFORMANCE CRÍTICA: El servidor demoró {tiempo_respuesta}s en responder. Posible caída o degradación.")
+        else:
+            logger.error(f"API: Falló la petición GET con status {response.status_code}")
+        raise e

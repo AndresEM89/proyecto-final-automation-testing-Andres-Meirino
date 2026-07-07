@@ -1,0 +1,38 @@
+2026-07-06 21:06:23,942 INFO talento tech - API: Intentando login válido en ReqRes
+2026-07-06 21:06:25,386 INFO talento tech - API: Respuesta recibida con status 200
+2026-07-06 21:06:25,497 WARNING talento tech - API: Intentando login sin contraseña (flujo negativo)
+2026-07-06 21:06:26,788 INFO talento tech - API: Respuesta recibida con status 400
+2026-07-06 21:06:26,799 INFO talento tech - API: Intentando crear usuario: jose
+2026-07-06 21:06:27,688 INFO talento tech - API: Validando creación de usuario con status 201
+2026-07-06 21:06:27,698 INFO talento tech - API: Intentando eliminar usuario con ID 2
+2026-07-06 21:06:28,607 INFO talento tech - API: Validando eliminación con status 204
+2026-07-06 21:06:28,618 INFO talento tech - API: Solicitando lista de usuarios
+2026-07-06 21:06:29,795 INFO talento tech - API: Petición GET exitosa en 1.173494 segundos
+2026-07-06 21:06:42,533 INFO talento tech - Carrito: Agregando el primer producto disponible al carro
+2026-07-06 21:06:42,729 INFO talento tech - Carrito: Validando que el contador del badge aumente a 1
+2026-07-06 21:06:42,806 INFO talento tech - Carrito: Entrando al carrito para verificar el producto: 'Sauce Labs Backpack'
+2026-07-06 21:06:42,944 INFO talento tech - Carrito: Verificación de producto en carrito exitosa
+2026-07-06 21:06:57,943 INFO talento tech - JSON: Leyendo lista de productos desde el archivo de datos
+2026-07-06 21:06:57,944 INFO talento tech - JSON: Agregando producto 'Sauce Labs Backpack' al carrito
+2026-07-06 21:06:58,076 INFO talento tech - JSON: Agregando producto 'Sauce Labs Bike Light' al carrito
+2026-07-06 21:06:58,203 INFO talento tech - JSON: Navegando hacia la página del carrito
+2026-07-06 21:06:58,686 INFO talento tech - JSON: Validando coincidencia de productos esperados vs carrito
+2026-07-06 21:06:58,686 INFO talento tech - JSON: Todos los productos del JSON se validaron correctamente en el carro
+2026-07-06 21:07:14,454 INFO talento tech - Inventario: Validando el título principal del header
+2026-07-06 21:07:29,806 INFO talento tech - Inventario: Verificando la presencia de productos cargados en la UI
+2026-07-06 21:07:45,461 INFO talento tech - Inventario: Validando visibilidad de elementos base (Menú y Filtro)
+2026-07-06 21:07:45,638 INFO talento tech - Inventario: Elementos de la interfaz verificados con éxito
+2026-07-06 21:07:59,741 INFO talento tech - Inicializando driver para test_login_ok
+2026-07-06 21:07:59,742 INFO talento tech - Ingresando datos para la prueba
+2026-07-06 21:08:01,316 INFO talento tech - Intentando iniciar sesión con usuario válido...
+2026-07-06 21:08:01,323 INFO talento tech - sesion iniciada correctamente
+2026-07-06 21:08:14,741 INFO talento tech - Inicializando la página de Login para contraseña inválida
+2026-07-06 21:08:14,741 INFO talento tech - Ingresando datos con contraseña incorrecta
+2026-07-06 21:08:15,981 INFO talento tech - Capturando el mensaje de error
+2026-07-06 21:08:16,011 INFO talento tech - Validación del error completada
+2026-07-06 21:08:29,727 INFO talento tech - CSV Login: Probando credenciales de usuario: 'standard_user' (Válido: true)
+2026-07-06 21:08:31,144 INFO talento tech - CSV Login: Validando redirección exitosa a la página de inventario
+2026-07-06 21:08:45,551 INFO talento tech - CSV Login: Probando credenciales de usuario: 'usuario_incorrecto' (Válido: false)
+2026-07-06 21:08:46,883 INFO talento tech - CSV Login: Validando presencia de mensaje de error 'Epic sadface'
+2026-07-06 21:09:01,278 INFO talento tech - CSV Login: Probando credenciales de usuario: 'standard_user' (Válido: false)
+2026-07-06 21:09:03,058 INFO talento tech - CSV Login: Validando presencia de mensaje de error 'Epic sadface'
